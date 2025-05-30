@@ -1,11 +1,11 @@
-<header class="header">
+<header class="header" aria-label="header with navigation">
 	<div class="logo">
 		<a href="/">
 			<img src="/peak-logo.avif" alt="Peak Skills logo" />
 		</a>
 	</div>
 
-	<nav class="nav">
+	<nav class="nav" aria-label="main navigation">
 		<a class="navItem" href="/">Home</a>
 		<a class="navItem" href="/programs">Youth Programs</a>
 		<a class="navItem" href="/#contact"><button class="secondary">Start training</button></a>

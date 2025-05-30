@@ -1,8 +1,8 @@
-<section class="section">
-	<div class="content">
-		<h4>Welcome to Peak Skills</h4>
-		<h2>BASKETBALL LEARNING AND DEVELOPMENT</h2>
-		<p>
+<section class="section" aria-label="welcome section">
+	<div class="content" aria-label="welcome content">
+		<h4 aria-label="welcome to peak skills">Welcome to Peak Skills</h4>
+		<h1 aria-label="basketball learning and development">BASKETBALL LEARNING AND DEVELOPMENT</h1>
+		<p aria-label="welcome message">
 			We specialize in teaching and providing all the necessary knowledge and skills that will help
 			your child go from 0 to college.
 		</p>
@@ -16,7 +16,7 @@
 		letter-spacing: 0.05em;
 	}
 
-	h2 {
+	h1 {
 		letter-spacing: 0.01em;
 		text-align: center;
 	}

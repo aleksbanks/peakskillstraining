@@ -4,8 +4,8 @@
 	import WelcomeSection from '$lib/components/Sections/WelcomeSection.svelte';
 </script>
 
-<main>
-	<Header />
+<Header />
+<main aria-label="site content">
 	<WelcomeSection />
 
 	<slot />

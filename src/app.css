@@ -14,6 +14,7 @@
 	--color-border: #ffffff33;
 
 	/* 📐 Spacing */
+	--spacing-xxs: 0.05rem;
 	--spacing-xs: 0.25rem;
 	--spacing-sm: 0.5rem;
 	--spacing-md: 1rem;
@@ -26,13 +27,16 @@
 	--font-size-md: 1rem;
 	--font-size-lg: 1.25rem;
 	--font-size-xl: 2rem;
-	--font-size-xxl: 3rem;
+	--font-size-xxl: 2.5rem;
+	--font-size-xxxl: 4rem;
 
 	/* 🔤 Font Weight */
+	--font-weight-light: 300;
 	--font-weight-normal: 400;
 	--font-weight-medium: 500;
 	--font-weight-semibold: 600;
 	--font-weight-bold: 700;
+	--font-weight-extrabold: 800;
 
 	/* ⏺ Other */
 	--radius-xs: 4px;
@@ -74,9 +78,16 @@ h1 {
 }
 h2 {
 	font-size: var(--font-size-xl);
+	font-weight: var(--font-weight-extrabold);
 }
 h3 {
 	font-size: var(--font-size-lg);
+}
+h4 {
+	font-size: var(--font-size-md);
+	text-transform: uppercase;
+	font-weight: var(--font-weight-light);
+	letter-spacing: var(--spacing-xxs);
 }
 
 /* Links */
@@ -107,6 +118,11 @@ button {
 button.primary {
 	background-color: var(--color-accent);
 	color: var(--color-text);
+	transition: opacity var(--transition);
+}
+
+button:hover {
+	opacity: 0.8;
 }
 
 button.secondary {
@@ -132,7 +148,10 @@ button.ghost {
 }
 
 .section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	padding: var(--spacing-xl) var(--spacing-lg);
-	background-color: var(--color-light);
-	border-bottom: 1px solid var(--color-border);
+	gap: var(--spacing-md);
 }

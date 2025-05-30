@@ -4,9 +4,9 @@
 	import WelcomeSection from '$lib/components/Sections/WelcomeSection.svelte';
 </script>
 
-<Header />
-<WelcomeSection />
-
 <main>
+	<Header />
+	<WelcomeSection />
+
 	<slot />
 </main>

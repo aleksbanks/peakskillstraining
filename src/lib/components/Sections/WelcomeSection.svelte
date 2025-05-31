@@ -6,7 +6,7 @@
 			We specialize in teaching and providing all the necessary knowledge and skills that will help
 			your child go from 0 to college.
 		</p>
-		<a href="/#contact"><button class="primary">train with us</button></a>
+		<a href="/#contact"><button class="primary button-uppercase">train with us</button></a>
 	</div>
 </section>
 
@@ -32,5 +32,9 @@
 		align-items: center;
 		gap: var(--spacing-md);
 		max-width: 600px;
+	}
+
+	button {
+		font-weight: var(--font-weight-semibold);
 	}
 </style>

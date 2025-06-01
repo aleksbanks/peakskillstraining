@@ -79,6 +79,7 @@
 		gap: var(--spacing-sm);
 		padding: 0 var(--spacing-md);
 		align-items: center;
+		max-width: 360px;
 	}
 
 	.location {

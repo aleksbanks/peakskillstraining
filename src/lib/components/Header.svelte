@@ -3,9 +3,7 @@
 	import { classnames } from '$lib/utils/classnames';
 	let scrolled = false;
 
-	/**
-	 * Adds a scrolled class to the header when the user scrolls down.
-	 */
+	/** Adds a scrolled class to the header when the user scrolls down. */
 	onMount(() => {
 		const handleScroll = () => {
 			scrolled = window.scrollY > 10; // 10px threshold
@@ -26,6 +24,9 @@
 	<nav class="nav" aria-label="main navigation">
 		<a class="navItem" href="/">Home</a>
 		<a class="navItem" href="/programs">Youth Programs</a>
+		<a class="navItem" href="/#gym-section">Gyms</a>
+		<a class="navItem" href="/#mission-section">Mission</a>
+
 		<a class="navItem" href="/#contact">
 			<button class="secondary button-uppercase">Start training</button>
 		</a>

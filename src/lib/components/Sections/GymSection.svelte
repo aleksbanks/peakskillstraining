@@ -25,7 +25,7 @@
 	];
 </script>
 
-<section class="section" aria-label="gym section">
+<section id="gym-section" aria-label="gym section">
 	<h2>Our gyms</h2>
 
 	<div class="content" aria-label="gyms information">

@@ -1,4 +1,4 @@
-<section class="section" aria-label="welcome section">
+<section id="welcome-section" aria-label="welcome section">
 	<div class="content" aria-label="welcome content">
 		<h4 aria-label="welcome to peak skills">Welcome to Peak Skills</h4>
 		<h1 aria-label="basketball learning and development">BASKETBALL LEARNING AND DEVELOPMENT</h1>
@@ -31,7 +31,6 @@
 		flex-direction: column;
 		align-items: center;
 		gap: var(--spacing-md);
-		max-width: 600px;
 	}
 
 	button {

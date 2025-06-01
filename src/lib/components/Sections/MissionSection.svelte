@@ -36,11 +36,6 @@
 </section>
 
 <style>
-	h4 {
-		color: var(--color-accent);
-		letter-spacing: 0.05em;
-	}
-
 	.content {
 		display: flex;
 		flex-direction: column;
@@ -63,11 +58,6 @@
 		display: flex;
 		flex-direction: column;
 		gap: var(--spacing-xxs);
-	}
-
-	ul {
-		list-style-type: circle;
-		margin-left: var(--spacing-md);
 	}
 
 	button {

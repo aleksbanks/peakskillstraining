@@ -26,7 +26,7 @@
 		<a class="navItem" href="/programs">Youth Programs</a>
 		<a class="navItem" href="/#gym-section">Gyms</a>
 		<a class="navItem" href="/#mission-section">Mission</a>
-
+		<a class="navItem" href="/#founder-section">Founder</a>
 		<a class="navItem" href="/#contact">
 			<button class="secondary button-uppercase">Start training</button>
 		</a>

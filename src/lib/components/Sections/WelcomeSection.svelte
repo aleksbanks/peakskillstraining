@@ -11,11 +11,6 @@
 </section>
 
 <style>
-	h4 {
-		color: var(--color-accent);
-		letter-spacing: 0.05em;
-	}
-
 	h1 {
 		letter-spacing: 0.01em;
 		text-align: center;

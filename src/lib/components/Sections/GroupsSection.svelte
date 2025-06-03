@@ -1,5 +1,6 @@
 <script lang="ts">
-	import IconWithNumber from '$lib/components/Helpers/IconWithNumber.svelte';
+	import Card from '$lib/components/Helpers/Card.svelte';
+
 	type Group = {
 		title: string;
 		description: string;
@@ -42,11 +43,7 @@
 		</div>
 		<div class="groups-grid">
 			{#each GROUPS as group}
-				<article class="group-card" aria-labelledby="group-title-{group.id}">
-					<IconWithNumber number={group.id} />
-					<h3 id="group-title-{group.id}">{group.title}</h3>
-					<p>{group.description}</p>
-				</article>
+				<Card title={group.title} description={group.description} number={group.id} width={30} />
 			{/each}
 		</div>
 	</div>
@@ -84,44 +81,10 @@
 		justify-content: center;
 	}
 
-	.group-card {
-		background-color: var(--color-secondary);
-		padding: var(--spacing-xl);
-		border-radius: var(--radius-md);
-		opacity: 0.9;
-		width: 30%;
-		display: flex;
-		flex-direction: column;
-		gap: var(--spacing-md);
-		transition:
-			transform 0.3s ease-in-out,
-			box-shadow 0.3s ease-in-out;
-		outline: none;
-	}
-
-	.group-card:hover,
-	.group-card:focus {
-		transform: scale(1.03);
-		box-shadow: 0 0 0 2px var(--color-accent);
-	}
-
-	h3 {
-		font-weight: var(--font-weight-bold);
-	}
-
-	@media (max-width: 900px) {
-		.group-card {
-			width: 45%;
-		}
-	}
-
 	@media (max-width: 600px) {
 		.groups-grid {
 			flex-direction: column;
 			gap: var(--spacing-md);
-		}
-		.group-card {
-			width: 100%;
 		}
 	}
 </style>

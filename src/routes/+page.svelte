@@ -3,6 +3,7 @@
 	import GymSection from '$lib/components/Sections/GymSection.svelte';
 	import MissionSection from '$lib/components/Sections/MissionSection.svelte';
 	import FounderSection from '$lib/components/Sections/FounderSection.svelte';
+	import GroupsSection from '$lib/components/Sections/GroupsSection.svelte';
 </script>
 
 <main aria-label="main page content">
@@ -10,4 +11,5 @@
 	<GymSection />
 	<MissionSection />
 	<FounderSection />
+	<GroupsSection />
 </main>

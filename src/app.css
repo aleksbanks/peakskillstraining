@@ -68,6 +68,11 @@ body {
 	background-color: var(--color-bg);
 }
 
+p {
+	font-weight: var(--font-weight-normal);
+	font-size: var(--font-size-md);
+}
+
 /* Headings */
 h1,
 h2,

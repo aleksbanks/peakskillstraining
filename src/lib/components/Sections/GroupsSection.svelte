@@ -1,4 +1,5 @@
 <script lang="ts">
+	import IconWithNumber from '$lib/components/Helpers/IconWithNumber.svelte';
 	type Group = {
 		title: string;
 		description: string;
@@ -42,9 +43,7 @@
 		<div class="groups-grid">
 			{#each GROUPS as group}
 				<article class="group-card" aria-labelledby="group-title-{group.id}">
-					<div class="icon-container" aria-label="Group {group.id}">
-						{group.id}
-					</div>
+					<IconWithNumber number={group.id} />
 					<h3 id="group-title-{group.id}">{group.title}</h3>
 					<p>{group.description}</p>
 				</article>
@@ -104,12 +103,6 @@
 	.group-card:focus {
 		transform: scale(1.03);
 		box-shadow: 0 0 0 2px var(--color-accent);
-	}
-	.icon-container {
-		border-radius: var(--radius-md);
-		border: 2px solid var(--color-accent);
-		padding: var(--spacing-sm) var(--spacing-md);
-		width: fit-content;
 	}
 
 	h3 {

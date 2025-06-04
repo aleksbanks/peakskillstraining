@@ -5,6 +5,7 @@
 	import FounderSection from '$lib/components/Sections/FounderSection.svelte';
 	import GroupsSection from '$lib/components/Sections/GroupsSection.svelte';
 	import PartnersSection from '$lib/components/Sections/PartnersSection.svelte';
+	import TestimonialsSection from '$lib/components/Sections/Testimonials.svelte';
 </script>
 
 <main aria-label="main page content">
@@ -14,4 +15,5 @@
 	<FounderSection />
 	<GroupsSection />
 	<PartnersSection />
+	<TestimonialsSection />
 </main>

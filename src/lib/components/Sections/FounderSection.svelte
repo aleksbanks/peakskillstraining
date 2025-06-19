@@ -1,14 +1,12 @@
 <section id="founder-section" aria-label="founder section">
 	<div class="content" aria-label="founder content">
-		<div class="image-crop">
-			<img
-				loading="lazy"
-				decoding="async"
-				alt="founder PAVEL SERGEEV"
-				src="/pavel-sergeev.png"
-				sizes="50vw"
-			/>
-		</div>
+		<img
+			loading="lazy"
+			decoding="async"
+			alt="founder PAVEL SERGEEV"
+			src="/pavel-sergeev.png"
+			sizes="50vw"
+		/>
 
 		<div class="founder-info" aria-label="founder info">
 			<h4>MEET THE FOUNDER</h4>
@@ -57,17 +55,11 @@
 		height: fit-content;
 	}
 
-	.image-crop {
-		height: calc(100% - 400px);
-		overflow: hidden;
-		width: 100%;
-	}
-
 	img {
 		object-fit: cover;
-		object-position: center -230px;
 		height: 100%;
 		width: 100%;
+		max-height: 594px;
 		max-width: 700px;
 	}
 
@@ -93,15 +85,6 @@
 			grid-template-columns: 5fr 7fr;
 			margin-left: auto;
 		}
-		img {
-			object-position: center -210px;
-		}
-	}
-
-	@media (max-width: 1300px) {
-		img {
-			object-position: center -180px;
-		}
 	}
 
 	@media (max-width: 576px) {
@@ -110,7 +93,6 @@
 		}
 		img {
 			max-width: 500px;
-			object-position: center -150px;
 		}
 	}
 </style>

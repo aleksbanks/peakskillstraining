@@ -201,6 +201,8 @@ section > .content {
 
 main {
 	padding-top: 90px;
+	background-color: var(--color-bg);
+	width: 100dvw;
 }
 
 ul {

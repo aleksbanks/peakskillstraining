@@ -56,6 +56,7 @@
 			url('/bg-image.avif') no-repeat center center;
 		background-size: cover;
 		min-height: 100vh;
+		width: 99dvw;
 	}
 
 	.groups-content {

@@ -3,6 +3,7 @@
 	import GymDetails from '$lib/components/Gym/GymDetails.svelte';
 	import TabList from '$lib/components/Tabs/TabList.svelte';
 	import { goto } from '$app/navigation';
+	import { fade } from 'svelte/transition';
 
 	let { data } = $props();
 	const gyms: Gym[] = [
@@ -128,7 +129,7 @@
 	});
 </script>
 
-<main aria-label="programs page content">
+<main aria-label="programs page content" in:fade={{ duration: 300 }}>
 	<div class="tabs-container">
 		<TabList {tabs} bind:activeTab />
 		<GymDetails gym={gyms[activeTab]} />

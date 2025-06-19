@@ -1,4 +1,3 @@
-<!-- src/lib/components/Tabs/TabList.svelte -->
 <script lang="ts">
 	import Tab from './Tab.svelte';
 

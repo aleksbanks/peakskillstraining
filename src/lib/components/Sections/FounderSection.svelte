@@ -59,7 +59,6 @@
 		object-fit: cover;
 		height: 100%;
 		width: 100%;
-		max-height: 594px;
 		max-width: 700px;
 	}
 
@@ -84,6 +83,12 @@
 		.content {
 			grid-template-columns: 5fr 7fr;
 			margin-left: auto;
+		}
+	}
+
+	@media (max-width: 1240px) {
+		img {
+			max-height: 594px;
 		}
 	}
 

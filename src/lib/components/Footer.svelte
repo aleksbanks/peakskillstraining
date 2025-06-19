@@ -49,6 +49,8 @@
 	footer {
 		padding: 4vw;
 		border-top: 1px solid var(--color-border);
+		margin-top: auto;
+		background-color: var(--color-bg);
 	}
 
 	p,
@@ -72,6 +74,8 @@
 		display: grid;
 		grid-template-columns: 3fr 3fr 2fr;
 		gap: var(--spacing-lg);
+		max-width: 1200px;
+		margin: 0 auto;
 	}
 
 	.footer-item {
@@ -93,5 +97,26 @@
 		display: flex;
 		flex-direction: row;
 		gap: var(--spacing-md);
+	}
+
+	@media (max-width: 768px) {
+		.footer-content {
+			grid-template-columns: 1fr;
+			text-align: center;
+		}
+
+		.footer-item:not(:last-child) {
+			padding-right: 0;
+			padding-bottom: var(--spacing-lg);
+		}
+
+		.social-links {
+			justify-content: center;
+		}
+
+		.contact-info,
+		.address-info {
+			align-items: center;
+		}
 	}
 </style>

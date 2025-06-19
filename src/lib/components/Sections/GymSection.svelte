@@ -37,7 +37,7 @@
 						<p class="address" aria-label="gym address">{gym.address}</p>
 						<p aria-label="gym description">{gym.description}</p>
 					</div>
-					<a href={`/programs#${gym.link}`} aria-label="choose program button"
+					<a href={`/programs?tab=${gym.link}`} aria-label="choose program button"
 						><button>Choose program</button></a
 					>
 				</div>

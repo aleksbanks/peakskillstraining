@@ -6,6 +6,7 @@
 	import GroupsSection from '$lib/components/Sections/GroupsSection.svelte';
 	import PartnersSection from '$lib/components/Sections/PartnersSection.svelte';
 	import TestimonialsSection from '$lib/components/Sections/Testimonials.svelte';
+	import ContactSection from '$lib/components/Sections/ContactSection.svelte';
 	import { fade } from 'svelte/transition';
 </script>
 
@@ -16,5 +17,6 @@
 	<FounderSection />
 	<GroupsSection />
 	<PartnersSection />
+	<ContactSection />
 	<TestimonialsSection />
 </main>

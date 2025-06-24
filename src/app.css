@@ -239,3 +239,57 @@ u::after {
 u:hover::after {
 	background: color-mix(in srgb, currentColor, black 15%);
 }
+
+input {
+	padding: var(--spacing-md);
+	border-radius: var(--radius-sm);
+	border: thin solid var(--color-border);
+	color: var(--color-text);
+	background: var(--color-secondary);
+	width: 100%;
+	font-size: var(--font-size-lg);
+}
+
+input:focus {
+	border: thin solid var(--color-accent);
+}
+
+input:focus-visible {
+	outline: none;
+	border-radius: var(--radius-sm);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+	border: thin solid var(--color-border) !important;
+	-webkit-box-shadow: 0 0 0px 1000px var(--color-secondary) inset !important;
+	-webkit-text-fill-color: var(--color-text) !important;
+	transition: background-color 5000s ease-in-out 0s !important;
+}
+/* Remove spinners/arrows from number inputs */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield; /* Firefox */
+}
+
+button:disabled {
+	opacity: 0.5;
+	cursor: default;
+}
+
+input:disabled {
+	opacity: 0.5;
+	cursor: default;
+}

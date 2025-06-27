@@ -9,7 +9,13 @@
 	};
 
 	let { testimonials }: Props = $props();
-	let options: EmblaOptionsType = { loop: true };
+	let options: EmblaOptionsType = {
+		loop: true,
+		align: 'center',
+		breakpoints: {
+			'(max-width: 900px)': { slidesToScroll: 1, align: 'start' }
+		}
+	};
 
 	// Track active slide
 	let activeIndex = $state(0);
@@ -46,7 +52,9 @@
 	<!-- Container for the carousel (each testimonial is a slide)-->
 	<div class="embla__container">
 		{#each testimonials as testimonial}
-			<Testimonial {testimonial} />
+			<div class="embla__slide">
+				<Testimonial {testimonial} />
+			</div>
 		{/each}
 	</div>
 </div>
@@ -70,12 +78,29 @@
 	}
 	.embla__container {
 		display: flex;
+		width: 100%;
+	}
+	.embla__slide {
+		flex: 0 0 32%;
+		min-width: 0;
+		max-width: 100vw;
+	}
+	@media (max-width: 900px) {
+		.embla__container {
+			width: 99vw;
+			max-width: 99vw;
+		}
+		.embla__slide {
+			flex: 0 0 100vw;
+			max-width: 100vw;
+		}
 	}
 	.carousel {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		gap: var(--spacing-md);
+		overflow: hidden;
 	}
 
 	.progress-dots {
@@ -88,11 +113,12 @@
 
 	.dot {
 		border-radius: 50%;
-		width: var(--spacing-md);
-		height: var(--spacing-md);
 		transition: background-color 0.5s;
 		padding: 0;
+		width: var(--spacing-md);
+		height: var(--spacing-md);
 	}
+
 	.dot--active {
 		background-color: var(--color-accent);
 	}

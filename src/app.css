@@ -343,8 +343,6 @@ input:disabled {
 	button,
 	a.button,
 	.button-uppercase {
-		min-width: var(--spacing-xxl);
-		min-height: var(--spacing-xxl);
 		font-size: var(--font-size-md);
 		padding: var(--spacing-xs) var(--spacing-md);
 	}
@@ -393,13 +391,4 @@ video {
 	max-width: 100%;
 	height: auto;
 	display: block;
-}
-
-/* Utility: Ensure touch targets are large enough (using spacing variables) */
-button,
-a,
-input[type='button'],
-input[type='submit'] {
-	min-width: var(--spacing-xxl);
-	min-height: var(--spacing-xxl);
 }

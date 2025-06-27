@@ -43,6 +43,8 @@
 			transform 0.3s ease-in-out,
 			box-shadow 0.3s ease-in-out;
 		outline: none;
+		width: 100%;
+		max-width: 400px;
 	}
 
 	.card:hover,
@@ -61,15 +63,26 @@
 		font-weight: var(--font-weight-bold);
 	}
 
-	/* Responsive */
 	@media (max-width: 900px) {
 		.card {
-			width: 45%;
+			max-width: 95vw;
+			padding: var(--spacing-lg);
 		}
 	}
 	@media (max-width: 600px) {
 		.card {
 			width: 100%;
+			max-width: 100%;
+			margin-bottom: 1rem;
+			padding: 1.25rem 1rem;
+			border-radius: 1.25rem;
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+		}
+		h3 {
+			font-size: 1.1rem;
+		}
+		p {
+			font-size: 0.98rem;
 		}
 	}
 </style>

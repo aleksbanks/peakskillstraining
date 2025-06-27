@@ -53,6 +53,8 @@
 		max-width: 80dvw;
 		margin-left: unset;
 		height: fit-content;
+		align-items: center;
+		padding: var(--spacing-lg);
 	}
 
 	img {
@@ -92,12 +94,25 @@
 		}
 	}
 
-	@media (max-width: 576px) {
+	@media (max-width: 900px) {
 		.content {
-			grid-template-columns: 2fr 3fr;
+			grid-template-columns: 1fr;
+			gap: var(--spacing-md);
+			padding: var(--spacing-md);
 		}
 		img {
-			max-width: 500px;
+			max-width: 95vw;
+		}
+	}
+
+	@media (max-width: 600px) {
+		.content {
+			gap: var(--spacing-sm);
+			padding: var(--spacing-md) var(--spacing-xs);
+			max-width: 98vw;
+		}
+		img {
+			max-width: 90vw;
 		}
 	}
 </style>

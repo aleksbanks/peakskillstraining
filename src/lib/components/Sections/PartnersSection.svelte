@@ -26,6 +26,17 @@
 			instagram: 'https://www.instagram.com/taketheshot.gr/'
 		}
 	];
+
+	let isMobile = $state(false);
+
+	function checkMobile() {
+		isMobile = window.innerWidth <= 600;
+	}
+
+	if (typeof window !== 'undefined') {
+		checkMobile();
+		window.addEventListener('resize', checkMobile);
+	}
 </script>
 
 <section id="partners-section" aria-labelledby="partners-heading">
@@ -41,7 +52,7 @@
 					buttonLink={partner.url}
 					secondaryButtonText="Instagram"
 					secondaryButtonLink={partner.instagram}
-					width={45}
+					{...isMobile ? {} : { width: 45 }}
 				/>
 			{/each}
 		</div>
@@ -55,18 +66,35 @@
 		align-items: center;
 		justify-content: center;
 		gap: var(--spacing-lg);
-		max-width: 80dvw;
+		max-width: 100vw;
+		padding: var(--spacing-lg);
 	}
 
 	.partners-grid {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
+		gap: var(--spacing-lg);
+	}
+
+	@media (max-width: 900px) {
+		.partners-content {
+			gap: var(--spacing-md);
+			padding: var(--spacing-md);
+		}
+		.partners-grid {
+			gap: var(--spacing-md);
+		}
 	}
 
 	@media (max-width: 600px) {
+		.partners-content {
+			gap: var(--spacing-sm);
+			padding: var(--spacing-sm);
+		}
 		.partners-grid {
 			flex-direction: column;
+			gap: var(--spacing-sm);
 		}
 	}
 </style>

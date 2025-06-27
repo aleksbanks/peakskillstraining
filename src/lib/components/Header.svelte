@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { classnames } from '$lib/utils/classnames';
-	let scrolled = false;
+	let scrolled = $state(false);
 	let isMenuOpen = $state(false);
 
 	/** Adds a scrolled class to the header when the user scrolls down. */
@@ -72,6 +72,7 @@
 	</nav>
 
 	<!-- Mobile nav overlay (always rendered for animation) -->
+	<!-- svelte-ignore a11y_click_events_have_key_events, a11y_no_static_element_interactions (because of reasons) -->
 	<div
 		class={classnames('nav-overlay', isMenuOpen && 'open')}
 		tabindex="-1"
@@ -117,6 +118,9 @@
 		height: 50px;
 		border-radius: var(--radius-xs);
 		object-fit: cover;
+		transition:
+			width var(--transition),
+			height var(--transition);
 	}
 
 	.nav {

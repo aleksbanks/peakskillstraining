@@ -59,3 +59,18 @@
 	<h2 aria-label="What Our Customers Say">What Our Customers Say</h2>
 	<TestimonialsCarousel testimonials={TESTIMONIALS} />
 </section>
+
+<style>
+	h2 {
+		font-size: var(--font-size-xl);
+		text-align: center;
+		word-break: break-word;
+		padding: 0 var(--spacing-sm);
+	}
+	@media (max-width: 600px) {
+		h2 {
+			font-size: var(--font-size-lg);
+			padding: 0 var(--spacing-xs);
+		}
+	}
+</style>

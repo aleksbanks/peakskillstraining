@@ -78,7 +78,7 @@
 		tabindex="-1"
 		onclick={handleOverlayClick}
 		onkeydown={handleKeydown}
-		style="pointer-events: {isMenuOpen ? 'auto' : 'none'};"
+		style="pointer-events: {isMenuOpen ? 'auto' : 'none'}; top: {scrolled ? '40px' : '80px'};"
 	>
 		<nav class={classnames('nav-mobile', isMenuOpen && 'open')} aria-label="mobile navigation">
 			<a class="navItem" href="/" onclick={() => (isMenuOpen = false)}>Home</a>
@@ -193,7 +193,6 @@
 	/* Overlay covers the entire viewport */
 	.nav-overlay {
 		position: fixed;
-		top: 80px;
 		left: 0;
 		width: 100vw;
 		height: 100dvh;

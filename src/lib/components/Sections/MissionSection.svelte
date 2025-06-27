@@ -41,7 +41,7 @@
 		flex-direction: column;
 		gap: var(--spacing-md);
 		padding: var(--spacing-lg);
-		max-width: 100vw;
+		max-width: 10dvw;
 	}
 
 	.mission-header {

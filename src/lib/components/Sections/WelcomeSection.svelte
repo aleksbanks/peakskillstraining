@@ -27,7 +27,7 @@
 		align-items: center;
 		gap: var(--spacing-md);
 		padding: var(--spacing-lg);
-		max-width: 100vw;
+		max-width: 100dvw;
 	}
 
 	button {

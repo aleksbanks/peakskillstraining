@@ -104,7 +104,7 @@
 		align-items: center;
 		justify-content: center;
 		gap: var(--spacing-lg);
-		max-width: 100vw;
+		max-width: 100dvw;
 		width: 100%;
 		padding: 0 var(--spacing-lg);
 	}
@@ -135,7 +135,7 @@
 			padding: 0 var(--spacing-md);
 		}
 		form {
-			max-width: 100vw;
+			max-width: 100dvw;
 		}
 	}
 

@@ -66,7 +66,7 @@
 		align-items: center;
 		justify-content: center;
 		gap: var(--spacing-lg);
-		max-width: 100vw;
+		max-width: 100dvw;
 		padding: var(--spacing-lg);
 	}
 

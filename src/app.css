@@ -308,7 +308,7 @@ input:disabled {
 		align-items: stretch;
 	}
 	.container {
-		max-width: 100vw;
+		max-width: 100dvw;
 		padding: var(--spacing-md) var(--spacing-xs);
 	}
 	main {
@@ -356,11 +356,11 @@ input:disabled {
 
 @media (max-width: 900px) {
 	.container {
-		max-width: 95vw;
+		max-width: 95dvw;
 		padding: var(--spacing-md);
 	}
 	main {
-		max-width: 100vw;
+		max-width: 100dvw;
 		padding-top: var(--spacing-xxl);
 	}
 	section {

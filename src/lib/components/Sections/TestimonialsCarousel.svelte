@@ -83,7 +83,7 @@
 	.embla__slide {
 		flex: 0 0 32%;
 		min-width: 0;
-		max-width: 100vw;
+		max-width: 100dvw;
 	}
 	@media (max-width: 900px) {
 		.embla__container {
@@ -91,8 +91,8 @@
 			max-width: 99vw;
 		}
 		.embla__slide {
-			flex: 0 0 100vw;
-			max-width: 100vw;
+			flex: 0 0 100dvw;
+			max-width: 100dvw;
 		}
 	}
 	.carousel {

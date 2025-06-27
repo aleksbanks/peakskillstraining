@@ -71,7 +71,7 @@
 			linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 			url('/bg-image.avif') no-repeat center center;
 		background-size: cover;
-		min-height: 100vh;
+		min-height: 100dvh;
 		width: 99dvw;
 		overflow-x: hidden;
 	}
@@ -103,12 +103,12 @@
 
 	@media (max-width: 600px) {
 		section {
-			width: 100vw;
+			width: 100dvw;
 			padding: 0;
 		}
 		.groups-content {
-			max-width: 100vw;
-			width: 100vw;
+			max-width: 100dvw;
+			width: 100dvw;
 			padding: 1.5rem 0.5rem 2rem 0.5rem;
 			gap: var(--spacing-md);
 		}

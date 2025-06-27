@@ -57,7 +57,7 @@
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: var(--spacing-md);
-		width: 100vw;
+		width: 100dvw;
 		max-width: 1200px;
 		padding: var(--spacing-lg);
 	}

@@ -5,7 +5,7 @@
 			decoding="async"
 			alt="founder PAVEL SERGEEV"
 			src="/pavel-sergeev.png"
-			sizes="50vw"
+			sizes="50dvw"
 		/>
 
 		<div class="founder-info" aria-label="founder info">
@@ -109,10 +109,10 @@
 		.content {
 			gap: var(--spacing-sm);
 			padding: var(--spacing-md) var(--spacing-xs);
-			max-width: 98vw;
+			max-width: 98dvw;
 		}
 		img {
-			max-width: 90vw;
+			max-width: 98dvw;
 		}
 	}
 </style>

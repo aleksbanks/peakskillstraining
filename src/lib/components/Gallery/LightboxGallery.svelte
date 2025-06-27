@@ -139,12 +139,12 @@
 	.lightbox-content {
 		position: relative;
 		max-width: 90%;
-		max-height: 90vh;
+		max-height: 90dvh;
 	}
 
 	.lightbox-content img {
 		max-width: 100%;
-		max-height: 90vh;
+		max-height: 90dvh;
 		object-fit: contain;
 	}
 

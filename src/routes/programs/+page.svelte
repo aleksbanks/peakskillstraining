@@ -8,6 +8,51 @@
 	let { data } = $props();
 	const gyms: Gym[] = [
 		{
+			id: 'hollywood',
+			name: 'Washington Park Community Center',
+			location: 'Hollywood, FL',
+			address: '5199 Pembroke Rd Hollywood, FL',
+			description:
+				'Our program provide the best possible basketball development for athletes of all ages and levels. If you care about the future of your children then register them below and lets start!',
+			photos: [
+				{
+					url: '/gyms/hollywood1.png',
+					alt: 'Washington Park court view 1'
+				},
+				{
+					url: '/gyms/hollywood2.png',
+					alt: 'Washington Park court view 2'
+				}
+			],
+			purchaseOptions: [
+				{
+					title: '2 Times a Week',
+					price: 199,
+					days: ['Tuesday', 'Thursday or Saturday'],
+					features: [
+						'2 training sessions per week',
+						'Group training',
+						'Fundamental skill development',
+						'Fundamental group: 6 - 7:20pm',
+						'Advanced group: 7:25 - 9pm'
+					]
+				},
+				{
+					title: '3 times a week',
+					price: 269,
+					days: ['Tuesday', 'Thursday', 'Saturday'],
+					features: [
+						'3 training sessions per week',
+						'Full facility access',
+						'Skill assessment',
+						'Fundamental group: 6 - 7:20pm',
+						'Advanced group: 7:25 - 9pm'
+					],
+					isPopular: true
+				}
+			]
+		},
+		{
 			id: 'gamepoint',
 			name: 'GamePoint Miami',
 			location: 'Hialeah, FL',
@@ -66,51 +111,6 @@
 						'Basic skill assessment',
 						'Our top program with the best possible basketball development.'
 					]
-				}
-			]
-		},
-		{
-			id: 'hollywood',
-			name: 'Washington Park Community Center',
-			location: 'Hollywood, FL',
-			address: '5199 Pembroke Rd Hollywood, FL',
-			description:
-				'Our program provide the best possible basketball development for athletes of all ages and levels. If you care about the future of your children then register them below and lets start!',
-			photos: [
-				{
-					url: '/gyms/hollywood1.png',
-					alt: 'Washington Park court view 1'
-				},
-				{
-					url: '/gyms/hollywood2.png',
-					alt: 'Washington Park court view 2'
-				}
-			],
-			purchaseOptions: [
-				{
-					title: '2 Times a Week',
-					price: 199,
-					days: ['Tuesday', 'Thursday or Saturday'],
-					features: [
-						'2 training sessions per week',
-						'Group training',
-						'Fundamental skill development',
-						'Fundamental group: 6 - 7:20pm',
-						'Advanced group: 7:25 - 9pm'
-					]
-				},
-				{
-					title: '3 times a week',
-					price: 269,
-					days: ['Tuesday', 'Thursday', 'Saturday'],
-					features: [
-						'3 training sessions per week',
-						'Full facility access',
-						'Skill assessment',
-						'Fundamental group: 6 - 7:20pm',
-						'Advanced group: 7:25 - 9pm'
-					],
-					isPopular: true
 				}
 			]
 		}

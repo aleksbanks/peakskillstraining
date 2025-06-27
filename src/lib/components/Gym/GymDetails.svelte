@@ -49,6 +49,7 @@
 	h3,
 	p {
 		text-align: center;
+		word-break: break-word;
 	}
 
 	.location {
@@ -80,6 +81,12 @@
 
 		.cards-grid {
 			grid-template-columns: 1fr;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.gym-details {
+			padding: var(--spacing-sm);
 		}
 	}
 </style>

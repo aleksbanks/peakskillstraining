@@ -382,6 +382,9 @@ input:disabled {
 	h4 {
 		font-size: var(--font-size-md);
 	}
+	html {
+		scroll-padding-top: 0;
+	}
 }
 
 /* Utility: Responsive images */

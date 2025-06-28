@@ -33,6 +33,17 @@
 			id: '4'
 		}
 	];
+
+	let isMobile = $state(false);
+
+	function checkMobile() {
+		isMobile = window.innerWidth <= 600;
+	}
+
+	if (typeof window !== 'undefined') {
+		checkMobile();
+		window.addEventListener('resize', checkMobile);
+	}
 </script>
 
 <section id="groups-section" aria-labelledby="groups-heading">
@@ -43,7 +54,12 @@
 		</div>
 		<div class="groups-grid">
 			{#each GROUPS as group}
-				<Card title={group.title} description={group.description} number={group.id} width={30} />
+				<Card
+					title={group.title}
+					description={group.description}
+					number={group.id}
+					{...isMobile ? {} : { width: 30 }}
+				/>
 			{/each}
 		</div>
 	</div>
@@ -55,8 +71,9 @@
 			linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 			url('/bg-image.avif') no-repeat center center;
 		background-size: cover;
-		min-height: 100vh;
+		min-height: 100dvh;
 		width: 99dvw;
+		overflow-x: hidden;
 	}
 
 	.groups-content {
@@ -66,6 +83,8 @@
 		justify-content: center;
 		gap: var(--spacing-lg);
 		max-width: 80dvw;
+		margin: 0 auto;
+		padding: 2rem 0;
 	}
 
 	.groups-header {
@@ -83,9 +102,27 @@
 	}
 
 	@media (max-width: 600px) {
+		section {
+			width: 100dvw;
+			padding: 0;
+		}
+		.groups-content {
+			max-width: 100dvw;
+			width: 100dvw;
+			padding: 1.5rem 0.5rem 2rem 0.5rem;
+			gap: var(--spacing-md);
+		}
+		.groups-header h2 {
+			font-size: 1.5rem;
+		}
+		.groups-header h4 {
+			font-size: 0.95rem;
+		}
 		.groups-grid {
 			flex-direction: column;
 			gap: var(--spacing-md);
+			width: 100%;
+			align-items: stretch;
 		}
 	}
 </style>

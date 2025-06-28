@@ -73,6 +73,11 @@
 		opacity: 0.9;
 		text-align: center;
 	}
+	@media (max-width: 600px) {
+		.testimonial {
+			padding: var(--spacing-md);
+		}
+	}
 
 	.truncated {
 		display: -webkit-box;

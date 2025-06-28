@@ -71,6 +71,7 @@
 	</div>
 
 	{#if isOpen}
+		<!-- svelte-ignore a11y_click_events_have_key_events, a11y_no_static_element_interactions (because of reasons) -->
 		<div
 			class="lightbox"
 			bind:this={lightboxElement}
@@ -139,12 +140,12 @@
 	.lightbox-content {
 		position: relative;
 		max-width: 90%;
-		max-height: 90vh;
+		max-height: 90dvh;
 	}
 
 	.lightbox-content img {
 		max-width: 100%;
-		max-height: 90vh;
+		max-height: 90dvh;
 		object-fit: contain;
 	}
 
@@ -195,6 +196,10 @@
 
 		.close {
 			font-size: 30px;
+		}
+
+		.photo-grid {
+			grid-template-columns: 1fr;
 		}
 	}
 

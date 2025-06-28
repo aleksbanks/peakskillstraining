@@ -99,24 +99,49 @@
 		gap: var(--spacing-md);
 	}
 
-	@media (max-width: 768px) {
+	@media (max-width: 900px) {
+		footer {
+			padding: var(--spacing-lg) var(--spacing-md);
+		}
+		.footer-content {
+			gap: var(--spacing-sm);
+			grid-template-columns: 1fr;
+		}
+	}
+
+	@media (max-width: 600px) {
+		footer {
+			padding: var(--spacing-md) var(--spacing-xs);
+		}
 		.footer-content {
 			grid-template-columns: 1fr;
 			text-align: center;
+			gap: var(--spacing-sm);
 		}
 
+		.footer-item {
+			gap: var(--spacing-sm);
+		}
 		.footer-item:not(:last-child) {
 			padding-right: 0;
-			padding-bottom: var(--spacing-lg);
+			padding-bottom: var(--spacing-sm);
 		}
-
+		img {
+			display: none;
+		}
 		.social-links {
 			justify-content: center;
 		}
-
 		.contact-info,
 		.address-info {
 			align-items: center;
+		}
+		p,
+		a {
+			font-size: var(--font-size-sm);
+		}
+		h3 {
+			font-size: var(--font-size-md);
 		}
 	}
 </style>

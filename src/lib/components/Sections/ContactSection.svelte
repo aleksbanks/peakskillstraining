@@ -87,6 +87,7 @@
 		background: var(--color-primary);
 		background-size: cover;
 		width: 99dvw;
+		padding: var(--spacing-lg) 0;
 	}
 
 	.contact-content-header {
@@ -103,8 +104,9 @@
 		align-items: center;
 		justify-content: center;
 		gap: var(--spacing-lg);
-		max-width: 100%;
-		width: 600px;
+		max-width: 100dvw;
+		width: 100%;
+		padding: 0 var(--spacing-lg);
 	}
 
 	form {
@@ -112,6 +114,7 @@
 		flex-direction: column;
 		gap: var(--spacing-md);
 		width: 100%;
+		max-width: 500px;
 	}
 
 	input {
@@ -119,7 +122,32 @@
 	}
 
 	button {
-		height: 50px;
+		height: var(--spacing-xxl);
 		border-radius: var(--radius-sm);
+	}
+
+	@media (max-width: 900px) {
+		section {
+			padding: var(--spacing-md) 0;
+		}
+		.contact-content {
+			gap: var(--spacing-md);
+			padding: 0 var(--spacing-md);
+		}
+		form {
+			max-width: 100dvw;
+		}
+	}
+
+	@media (max-width: 600px) {
+		section {
+			padding: var(--spacing-sm) 0;
+		}
+		.contact-content {
+			gap: var(--spacing-sm);
+		}
+		form {
+			max-width: 98vw;
+		}
 	}
 </style>

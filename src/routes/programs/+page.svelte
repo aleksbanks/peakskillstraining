@@ -145,7 +145,7 @@
 
 	@media (max-width: 768px) {
 		.tabs-container {
-			padding: 0 var(--spacing-md);
+			padding: calc(var(--spacing-sm) + 10px) calc(var(--spacing-xs) + 10px);
 		}
 	}
 </style>

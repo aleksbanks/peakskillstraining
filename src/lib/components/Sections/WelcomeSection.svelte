@@ -26,9 +26,22 @@
 		flex-direction: column;
 		align-items: center;
 		gap: var(--spacing-md);
+		padding: var(--spacing-lg);
+		max-width: 100dvw;
 	}
 
 	button {
 		font-weight: var(--font-weight-semibold);
+	}
+
+	@media (max-width: 600px) {
+		.content {
+			gap: var(--spacing-sm);
+			padding: var(--spacing-md) var(--spacing-xs);
+			max-width: 98vw;
+		}
+		p {
+			max-width: 95vw;
+		}
 	}
 </style>

@@ -20,5 +20,12 @@
 		border-bottom: 1px solid var(--color-border);
 		height: fit-content;
 		padding: var(--spacing-md) 0;
+		max-width: 100vw;
+	}
+
+	@media (max-width: 600px) {
+		.tab-list {
+			flex-direction: column;
+		}
 	}
 </style>
